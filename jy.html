@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人簡歷</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 50px; /* space for header */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF8C00;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>郭秦佐</h1>
+                <p>中原大學學生 | 準備斜槓當健身教練 | 電腦障礙患者</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#education">教育經歷</a></li>
+                    <li><a href="#skills">程式能力</a></li>
+                    <li><a href="#experience">工作經歷</a></li>
+                    <li><a href="#future">大學及未來展望</a></li>
+                    <li><a href="#contact">聯絡方式</a></li>
+                    <li><a href="#interests">興趣</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Education Section -->
+        <section id="education">
+            <h2>教育經歷</h2>
+            <p>屏東市仁愛國小 | 屏東市至正國中 | 屏東市屏東高中</p>
+            <p>大學: 中原大學 | 系所: 資訊管理學系</p>
+        </section>
+
+        <!-- Programming Skills Section -->
+        <section id="skills">
+            <h2>程式能力</h2>
+            <ul>
+                <li>Python - 80%</li>
+                <li>Java - 70%</li>
+                <li>HTML - 85%</li>
+                <li>CSS - 65%</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>工作經歷</h2>
+            <h3>屏東市丹麥烘培房 | 外場服務員</h3>
+            <p>2019-2020</p>
+            <ul>
+                <li>負責將麵包裝進塑膠袋</li>
+                <li>用土司機切吐司</li>
+                <li>包裝生日蛋糕</li>
+            </ul>
+            <h3>石二鍋中壢榮民店 | 服務員</h3>
+            <p>2023/8/1 - 2023/8/21</p>
+            <ul>
+                <li>負責送餐</li>
+                <li>清理餐桌</li>
+                <li>大喊: 歡迎光臨石二鍋~來點新鮮的~</li>
+                <li>掃廁所</li>
+            </ul>
+        </section>
+
+        <!-- Future and Goals Section -->
+        <section id="future">
+            <h2>大學及未來展望</h2>
+            <p>我目前在中原大學資訊管理學系就讀，專注於學習程式設計、數據分析等領域，並希望能夠在畢業後找到一份與程式開發或數據分析相關的工作。</p>
+            <p>在大學四年內，我將積極學習更多編程語言，並希望取得相關的專業證照，為未來的職場做好準備。</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>聯絡方式</h2>
+            <p>電子郵件: jimmybasketball2005@gmail.com</p>
+            <p>電話: 0921120650</p>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2>興趣</h2>
+            <ul>
+                <li>運動：打籃球、健身、游泳、羽毛球、排球</li>
+                <li>旅行：遊歷台灣本島，北至富貴角，南至鵝鑾鼻</li>
+                <li>閱讀：喜愛科技書籍和科幻小說，並精進程式語言</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 郭秦佐. 版權所有.</p>
+    </footer>
+</body>
+</html>
